@@ -1,0 +1,29 @@
+GET http://localhost:4000/users HTTP/1.1
+
+### get by id
+GET http://localhost:4000/users/603af619c0ae2e3a69a0e871 HTTP/1.1
+
+###
+POST http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "david",
+  "apellido": "otro apellid",
+  "edad": 30,
+  "email": "jhon@gmail.com"
+}
+
+###update
+PUT http://localhost:4000/users/603af411e972c139f4fee40d HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "otro",
+  "apellido": "otro",
+  "edad": 18,
+  "email": "jhon@gmail.com"
+}
+
+### delete
+DELETE http://localhost:4000/users/603af4a886b4d43a1d7935eb HTTP/1.1
